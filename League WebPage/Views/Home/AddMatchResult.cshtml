@@ -1,0 +1,30 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" contact="width=device-width"/>
+    
+</head>
+<body>
+    <center>
+        <h1>Foot Ball League</h1>
+        <title>Save Data</title>
+        <div>
+            <form action="/Home/AddMatchResult" method="post">
+                <table border="2" bgcolor="#00FF00" height="200" width="400">
+                    <tr><td>Match ID</td><td><input type="text" name="matchid"</td></tr>
+                    <tr><td>Team Name 1 </td><td><input type="text" name="teamname1"</td></tr>
+                    <tr><td>Team Name 2</td><td><input type="text" name="teamname2"</td></tr>
+                    <tr><td>Status</td><td><input type="text" name="status"</td></tr>
+                    <tr><td>Winning Team</td><td><input type="text" name="winningteam"</td></tr>
+                    <tr><td>Point</td><td><input type="text" name="points"</td></tr>
+                    <tr><td colspan="2" align="center"><input type="submit" value="Save Match Data"</td></tr>
+                </table>
+                @ViewBag.result
+            </form>
+        </div>
+    </center>
+</body>
+</html>
